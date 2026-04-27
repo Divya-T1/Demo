@@ -69,7 +69,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white border-b px-6 py-4 shadow-sm">
-        <h1 className="text-xl font-bold text-indigo-600">Nexus AI</h1>
+        <h1 className="text-xl font-bold text-indigo-600">AI Learning Assistant</h1>
         <p className="text-sm text-gray-400">PDF Research Assistant & Prompt Sandbox</p>
       </header>
 
