@@ -13,9 +13,6 @@
       <h1 class="text-xl font-bold text-indigo-600">AI Learning Assistant</h1>
       <p class="text-sm text-gray-400">PDF Research Assistant &amp; Prompt Sandbox</p>
     </div>
-    <div id="scored-badge" class="hidden text-sm text-indigo-600 font-medium bg-indigo-50 border border-indigo-200 rounded-full px-3 py-1">
-      🧪 <span id="scored-count">0</span> scored
-    </div>
   </header>
 
   <main class="max-w-3xl mx-auto p-6">
@@ -96,7 +93,7 @@
     // ─── State ────────────────────────────────────────────────────────────────
     const docs = []
     let chatTurn = 0
-    let scoredCount = 0
+
 
     // ─── Tabs ─────────────────────────────────────────────────────────────────
     function setTab(id) {
@@ -215,9 +212,6 @@
       document.getElementById('score-improved').textContent = improved
       document.getElementById('sandbox-result').classList.remove('hidden')
 
-      scoredCount++
-      document.getElementById('scored-count').textContent = scoredCount
-      document.getElementById('scored-badge').classList.remove('hidden')
 
       btn.textContent = 'Score'
       btn.disabled = false
